@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Produit — Maison Nadara</title>
+<meta name="description" content="Fiche produit Maison Nadara : notes, profil, conseils d'usage et composition.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/blocks.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Principale">
+  <a href="index.html"><span class="brand">Maison Nadara</span></a>
+  <a href="boutique.html" aria-current="page">Boutique</a>
+  <a href="maison.html">La Maison</a>
+  <a href="contact.html">Contact</a>
+  <button type="button" data-devise aria-label="Changer de devise"><span data-devise-lbl>EUR</span></button>
+  <button type="button" data-cart-open>Panier (<span data-count>0</span>)</button>
+</nav>
+
+<main data-pdp>
+<div class="bar">
+  <div class="crumbs ui">
+    <a class="lnk k60" href="boutique.html">Boutique</a><span class="k60">/</span><span data-f="family"></span>
+  </div>
+  <p class="ui k60" data-f="volume"></p>
+</div>
+
+<section class="pdp">
+  <div class="pdp__views" data-f="views"></div>
+
+  <div class="pdp__info">
+    <div class="pdp__block">
+      <h1 class="h2" data-f="name"></h1>
+      <p class="ui k60" style="margin-top:10px" data-f="sub"></p>
+      <p class="pdp__price h3 num" data-f="price"></p>
+    </div>
+
+    <div class="pdp__block">
+      <p class="lead" data-f="claim"></p>
+      <p class="k60" style="margin-top:14px" data-f="story"></p>
+    </div>
+
+    <div class="pdp__block">
+      <div style="display:flex;gap:10px;align-items:stretch">
+        <div class="qty" data-qty style="margin-top:0;align-items:stretch">
+          <button type="button" data-step="-1" aria-label="Diminuer la quantité" style="width:44px;height:auto">&minus;</button>
+          <output style="align-self:center"></output>
+          <button type="button" data-step="1" aria-label="Augmenter la quantité" style="width:44px;height:auto">+</button>
+        </div>
+        <button class="btn" type="button" data-f="add" data-qty="1" style="flex:1">Ajouter au panier</button>
+      </div>
+      <p class="ui k60" style="margin-top:14px">Expédié sous 48 h — livraison offerte dès <span data-franco>90 €</span></p>
+    </div>
+
+    <div class="pdp__block">
+      <p class="ui k60" style="margin-bottom:14px">Profil</p>
+      <div class="bars" data-f="bars"></div>
+    </div>
+
+    <div class="acc">
+      <details open>
+        <summary class="ui">Les notes</summary>
+        <div class="body"><div class="pdp__notes" data-f="notes"></div></div>
+      </details>
+      <details>
+        <summary class="ui">Conseil d'usage</summary>
+        <div class="body k60" data-f="usage"></div>
+      </details>
+      <details>
+        <summary class="ui">Composition</summary>
+        <div class="body k60" data-f="compo"></div>
+      </details>
+      <details>
+        <summary class="ui">Livraison &amp; retours</summary>
+        <div class="body k60">Expédition sous 48 h depuis Casablanca. Livraison offerte dès <span data-franco>90 €</span>. Retour sous 30 jours, flacon non entamé.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker__t"><span>
+  Musc blanc <i></i> Néroli <i></i> Jasmin sambac <i></i> Miel ambré <i></i> Fleur d'oranger
+  <i></i> Cèdre blanc <i></i> Vanille bourbon <i></i> Iris pâle <i></i> Benjoin <i></i>
+</span></div></div>
+
+<div class="bar"><p class="ui">Vous aimerez aussi</p><a class="ui lnk" href="boutique.html">Toute la boutique</a></div>
+<section class="grid" data-f="related"></section>
+</main>
+
+<footer class="foot">
+  <div class="foot__cols">
+    <div>
+      <p class="foot__h ui k60">Boutique</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="produit.html?p=soleil-de-petra">Soleil de Petra</a></li>
+        <li><a class="lnk" href="produit.html?p=soleil-d-alhambra">Soleil d'Alhambra</a></li>
+        <li><a class="lnk" href="produit.html?p=soleil-de-casablanca">Soleil de Casablanca</a></li>
+        <li><a class="lnk" href="produit.html?p=coffret-trois-soleils">Coffret Les Trois Soleils</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">La maison</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="maison.html">Notre histoire</a></li>
+        <li><a class="lnk" href="maison.html#engagements">Engagements</a></li>
+        <li><a class="lnk" href="contact.html">Nous écrire</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">Aide</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="contact.html">Livraison &amp; retours</a></li>
+        <li><a class="lnk" href="contact.html">Recharges</a></li>
+        <li><a class="lnk" href="contact.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">Atelier</p>
+      <p class="ui" style="line-height:1.7">14, rue de l'Ourika<br>Quartier des Habous<br>Casablanca, Maroc</p>
+      <p class="ui" style="margin-top:12px"><a class="lnk" href="contact.html">bonjour@maisonnadara.com</a></p>
+    </div>
+  </div>
+
+  <div class="foot__bar ui k60">
+    <span>© 2026 Maison Nadara</span>
+    <span>Composé et embouteillé à Casablanca</span>
+  </div>
+</footer>
+
+<dialog class="drawer" aria-label="Votre panier">
+  <div class="drawer__in">
+    <div class="drawer__hd">
+      <p class="ui">Panier (<span data-count>0</span>)</p>
+      <button class="x" type="button" data-cart-close aria-label="Fermer le panier">&#10005;</button>
+    </div>
+    <div class="drawer__body"></div>
+    <div class="drawer__ft" hidden>
+      <div class="drawer__row"><span class="ui k60">Sous-total</span><span class="drawer__sum h3 num"></span></div>
+      <p class="ui k60">Livraison offerte dès <span data-franco>90 €</span> — retours sous 30 jours</p>
+      <button class="btn btn--block" type="button" data-checkout>Passer commande</button>
+      <p class="drawer__note ui msg"></p>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maison Nadara — Parfums d'intérieur</title>
+<meta name="description" content="Maison Nadara compose trois brumes d'intérieur en flacon d'ambre : Soleil de Petra, Soleil d'Alhambra, Soleil de Casablanca.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/blocks.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Principale">
+  <a href="index.html" aria-current="page"><span class="brand">Maison Nadara</span></a>
+  <a href="boutique.html">Boutique</a>
+  <a href="maison.html">La Maison</a>
+  <a href="contact.html">Contact</a>
+  <button type="button" data-devise aria-label="Changer de devise"><span data-devise-lbl>EUR</span></button>
+  <button type="button" data-cart-open>Panier (<span data-count>0</span>)</button>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hero__img">
+    <div class="slides">
+      <div class="slide on">
+        <video src="assets/video/atelier.mp4" autoplay muted playsinline preload="auto" data-debut="1.2"
+               aria-label="Vue en contre-plongée sur les tours de Casablanca"></video>
+      </div>
+    </div>
+
+    <div class="hero__meta ui">
+      <p>Parfums d'intérieur — Casablanca</p>
+      <p>Trois flacons d'ambre, 250 ml</p>
+    </div>
+
+    <button class="hero__play ui" type="button" data-lire hidden>Lire la vidéo</button>
+  </div>
+
+  <h1 class="sr-only">Maison Nadara — parfums d'intérieur</h1>
+</section>
+
+<div class="ticker"><div class="ticker__t"><span>
+  Musc blanc <i></i> Néroli <i></i> Jasmin sambac <i></i> Miel ambré <i></i> Fleur d'oranger
+  <i></i> Cèdre blanc <i></i> Vanille bourbon <i></i> Iris pâle <i></i> Benjoin <i></i>
+</span></div></div>
+
+<section class="coll">
+  <div class="bar">
+    <p class="ui">La collection</p>
+    <a class="ui lnk" href="boutique.html">Voir la boutique — 04 références</a>
+  </div>
+  <div data-coll></div>
+  <figure class="coll__peek" aria-hidden="true"><img alt="" decoding="async"></figure>
+</section>
+
+<section class="slab slab--photo">
+  <div class="slab__txt">
+    <p class="ui" style="opacity:.75">Coffret — 3 × 250 ml</p>
+    <h2 class="h2" style="margin-top:14px">Trois villes,<br>trois heures<br>du jour</h2>
+    <p class="lead" style="margin-top:22px;max-width:38rem">
+      Les trois compositions dans un étui de lin brut, cousu à Salé, avec le carnet des notes.
+    </p>
+
+    <ul class="slab__rows ui">
+      <li><b>01</b><span>Soleil de Petra</span><em>Matin — musc blanc</em></li>
+      <li><b>02</b><span>Soleil d'Alhambra</span><em>Après-midi — néroli</em></li>
+      <li><b>03</b><span>Soleil de Casablanca</span><em>Nuit — jasmin, miel</em></li>
+    </ul>
+
+    <div class="slab__cta">
+      <button class="btn" type="button" data-add="coffret-trois-soleils">Ajouter — <span data-prix-de="coffret-trois-soleils">128 €</span></button>
+      <a class="btn btn--ghost" href="produit.html?p=coffret-trois-soleils">Voir le coffret</a>
+      <span class="ui" style="opacity:.7;margin-left:auto">Économie de <span data-economie>12 €</span> sur les trois</span>
+    </div>
+  </div>
+  <figure><img src="assets/img/bloc-piscine.webp" alt="Carton d'invitation flottant à la surface d'un bassin" loading="lazy" width="980" height="1470"></figure>
+</section>
+
+<section class="split split--media">
+  <div>
+    <p class="ui k60">La maison</p>
+    <h2 class="h2" style="margin-top:16px">Un atelier,<br>une table,<br>trois formules</h2>
+    <p class="prose k60" style="margin-top:24px">Maison Nadara est née d'un constat simple : les parfums d'intérieur sentent presque tous la même chose. Nous avons repris à zéro, avec un nez indépendant, des matières premières tracées et un seul format — le flacon d'ambre de 250 ml, rechargeable.</p>
+    <p style="margin-top:32px"><a class="btn btn--ghost" href="maison.html">Notre histoire</a></p>
+  </div>
+  <figure class="fig"><img src="assets/img/mood-lumiere.webp" alt="Intérieur traversé par la lumière du matin" loading="lazy"></figure>
+</section>
+
+<div class="bar"><p class="ui">Journal</p><p class="ui k60">Notes d'atelier</p></div>
+<section class="jour" data-journal></section>
+
+<section class="split">
+  <div>
+    <p class="ui k60">Lettre de la maison</p>
+    <h2 class="h2" style="margin-top:16px">Une lettre,<br>quand il y a<br>quelque chose à dire</h2>
+  </div>
+  <div>
+    <p class="lead">Les nouvelles formules, les remises en stock, les portes ouvertes de l'atelier. Quatre ou cinq envois par an, pas davantage.</p>
+    <form class="field" style="margin-top:28px" data-demo="Merci — vous êtes inscrit·e.">
+      <input type="email" name="email" required placeholder="Adresse e-mail" aria-label="Adresse e-mail">
+      <button type="submit">S'inscrire</button>
+    </form>
+    <p class="ui msg" style="margin-top:12px"></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__cols">
+    <div>
+      <p class="foot__h ui k60">Boutique</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="produit.html?p=soleil-de-petra">Soleil de Petra</a></li>
+        <li><a class="lnk" href="produit.html?p=soleil-d-alhambra">Soleil d'Alhambra</a></li>
+        <li><a class="lnk" href="produit.html?p=soleil-de-casablanca">Soleil de Casablanca</a></li>
+        <li><a class="lnk" href="produit.html?p=coffret-trois-soleils">Coffret Les Trois Soleils</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">La maison</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="maison.html">Notre histoire</a></li>
+        <li><a class="lnk" href="maison.html#engagements">Engagements</a></li>
+        <li><a class="lnk" href="contact.html">Nous écrire</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">Aide</p>
+      <ul class="foot__list ui">
+        <li><a class="lnk" href="contact.html">Livraison &amp; retours</a></li>
+        <li><a class="lnk" href="contact.html">Recharges</a></li>
+        <li><a class="lnk" href="contact.html">Mentions légales</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="foot__h ui k60">Atelier</p>
+      <p class="ui" style="line-height:1.7">14, rue de l'Ourika<br>Quartier des Habous<br>Casablanca, Maroc</p>
+      <p class="ui" style="margin-top:12px"><a class="lnk" href="contact.html">bonjour@maisonnadara.com</a></p>
+    </div>
+  </div>
+
+  <div class="foot__bar ui k60">
+    <span>© 2026 Maison Nadara</span>
+    <span>Composé et embouteillé à Casablanca</span>
+  </div>
+</footer>
+
+<dialog class="drawer" aria-label="Votre panier">
+  <div class="drawer__in">
+    <div class="drawer__hd">
+      <p class="ui">Panier (<span data-count>0</span>)</p>
+      <button class="x" type="button" data-cart-close aria-label="Fermer le panier">&#10005;</button>
+    </div>
+    <div class="drawer__body"></div>
+    <div class="drawer__ft" hidden>
+      <div class="drawer__row"><span class="ui k60">Sous-total</span><span class="drawer__sum h3 num"></span></div>
+      <p class="ui k60">Livraison offerte dès <span data-franco>90 €</span> — retours sous 30 jours</p>
+      <button class="btn btn--block" type="button" data-checkout>Passer commande</button>
+      <p class="drawer__note ui msg"></p>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
